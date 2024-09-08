@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors 2</title>
+    <style>
+        .onemli {
+            border-left: 10px solid green;
+        }
+        .onemli+li {
+            border-left: 10pz solid red;
+        }
+        .onemsiz~li {
+            border-left: 10px solid cyan;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Earum, excepturi!</li>
+        <li class="onemli">Eveniet, magnam!</li>
+        <li>Soluta, laborum!</li>
+        <li class="onemsiz">Sunt, quae?</li>
+        <li>Autem, aliquam!</li>
+        <li>Dicta, expedita.</li>
+        <li>Tenetur, suscipit?</li>
+        <li>Nostrum, delectus.</li>
+    </ul>
+</body>
+</html>
