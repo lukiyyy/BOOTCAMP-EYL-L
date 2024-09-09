@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutular</title>
+    <style>
+        /* div elementlerine aşagıdaki özellikleri taşayacak şekile css verin:
+        1. toplam yüksekligi: 200px
+        2. toplam yüksekligi:200px
+        3. arka plan rengi (siz seçin) verin
+        4. 20 px dolgu padding
+        5. 10 px border
+        6. 15 px margin
+        7. yazi rengi beyaz color */
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(117, 241, 117);
+            padding: 20px;
+            border: 10px solid black;
+            margin: 15px;
+            color: white;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            outline: 10px solid rgb(241, 241, 110);
+            
+        }
+
+        main {
+            border: 10px solid cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Problem: main kutusunun kenarlıgı içindeki her şeyi çevrelemesi gerekirken neden şuan çevrelenmiyor cevabı float konusunda -->
+    <main>
+        <!-- div*10>{kutu $} -->
+        <div>kutu 1</div>
+        <div>kutu 2</div>
+        <div>kutu 3</div>
+        <div>kutu 4</div>
+        <div>kutu 5</div>
+        <div>kutu 6</div>
+        <div>kutu 7</div>
+        <div>kutu 8</div>
+        <div>kutu 9</div>
+        <div>kutu 10</div>
+    </main>
+</body>
+
+</html>
