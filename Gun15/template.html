@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        ::after {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        mark {
+            background-color: black;
+            color: white;
+            padding: .1rem .5rem;
+        }
+
+        header {
+            padding: 2rem;
+            padding: 1rem;
+            margin: 1rem 0 2rem 0;
+            text-align: center;
+        }
+
+        header>h1 {
+            margin-top: 0;
+            text-transform: uppercase;
+
+        }
+
+        main {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .col1 {
+            flex: 2;
+            margin: 0 1rem;
+
+        }
+
+        .col2 {
+            flex: 1;
+            margin: 0 1rem;
+        }
+
+        .box {
+            background-color: white;
+            margin-bottom: 2rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        .box .box-header {
+            padding: 18px 16px;
+            background-color: #f1f1f1;
+            font-size: 1.2rem;
+        }
+
+        .box>img {
+            height: 16rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .box>.info {
+            padding: 1rem;
+
+        }
+
+        .box>.info>h2 {
+            margin-bottom: 10px;
+        }
+
+        .box>.info>.date {
+            margin-bottom: 25px;
+        }
+
+        .box>.info>.description {
+            margin-bottom: 30px;
+        }
+
+        .box>.info>.info-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box>.info>.info-footer>.btn {
+            color: black;
+            border: 10px;
+            text-decoration: none;
+            border: 1px solid rgb(202, 202, 202);
+            padding: 10px;
+        }
+
+        .box>.info>.comments> {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        .box .post {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border: 1px solid #ddd;
+        }
+
+        .box .post:hover {
+            background-color: #ddd;
+        }
+
+        .box .post img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .box .kutucuk {
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .box .kutucuk span {
+            background-color: #f1f1f1;
+            font-size: .9rem;
+            height: fit-content;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        .description {
+            font-size: 15px;
+            line-height: 1.5;
+            display: block;
+            margin-block-start: 1em;
+        }
+
+
+        mark.yuvarlak {
+            border-radius: 20px;
+        }
+
+        footer {
+            padding: 32px 16px;
+            background-color: #616161;
+            margin-top: 1rem;
+        }
+
+        footer .btn-pre {
+            color: #6e6c6c;
+            border: 10px;
+            text-decoration: none;
+            background-color: #464646;
+            padding: 10px;
+            cursor: not-allowed;
+        }
+
+
+        footer .btn-next {
+            color: white;
+            background-color: black;
+            border: 10px;
+            text-decoration: none;
+
+            padding: 10px;
+        }
+
+        footer .footer-btn {
+            margin: 0 0 2rem;
+        }
+
+        p.kutu2 {
+            color: white;
+         
+        }
+
+        p.kutu2 a {
+            color: inherit;
+        }
+
+
+        /* 990 yap*/
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            My Blog
+        </h1>
+        <div class="site-desc">
+            Welcom to the blog of <mark> unknown</mark>
+        </div>
+    </header>
+    <main>
+        <div class="col1">
+            <div class="box">
+                <img src="saylangoz.avif" alt="resim">
+                <div class="info">
+                    <h2>TITLE HEADİNG</h2>
+                    <p class="date">Title description, April 7, 2014 </p>
+                    <p class="description">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed
+                        mattis nunc id lorem
+                        euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                        ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                        condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    <div class="info-footer">
+                        <a href="#" class="btn">READ MORE »</a>
+                        <div class="comments">
+                            Comments <mark> 0 </mark>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="doga2.jpg" alt="resim">
+                <div class="info">
+                    <h2>BLOG ENTRY</h2>
+                    <p class="date">Title description, April 2, 2014 </p>
+                    <p class="description">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed
+                        mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus
+                        at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum.
+                        Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                    </p>
+                    <div class="info-footer">
+                        <a href="#" class="btn">READ MORE »</a>
+                        <div class="comments">
+                            Comments <mark class="yuvarlak"> 2 </mark>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="box">
+                <img src="sincap.avif" alt="resim">
+                <div class="info">
+                    <h2>My Name</h2>
+                    <p class="description">Just me, myself and I, exploring the universe of uknownment. I have a heart
+                        of
+                        love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-header">
+                    Popular Posts
+                </div>
+                <div class="post">
+                    <img src="macbook.avif" alt="resim">
+                    <div class="post-info">
+                        <h3>Lorem</h3>
+                        <p>Sed mattis nunc</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="doga1.jpg" alt="resim">
+                    <div class="post-info">
+                        <h3>Ipsum</h3>
+                        <p>Praes tinci sed</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="ugurböcegi.avif" alt="resim">
+                    <div class="post-info">
+                        <h3>Dorum</h3>
+                        <p>Ultricies congue</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="metro.avif" alt="resim">
+                    <div class="post-info">
+                        <h3>Mingsum</h3>
+                        <p> Lorem ipsum dipsum </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    Tags
+                </div>
+                <div class="kutucuk">
+                    <mark>Travel</mark> <span>NewYork</span> <span>London</span> <span>IKEA</span> <span>NORVAY</span>
+                    <span>DIY</span>
+                    <span>Ideas</span> <span>baby</span> <span>family </span><span>news</span> <span>clothing</span>
+                    <span>Shopping</span>
+                    <span>Sports</span> <span> Games</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-btn">
+            <a href="#" class="btn-pre">Previous</a>
+            <a href="#" class="btn-next">Next »</a>
+        </div>
+        <p class="kutu2">Powered by 
+          <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
