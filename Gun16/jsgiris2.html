@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><span lang="en">JavaScript</span> giriş II</h1>
+    <p>Bir HTML dökümanında Javascript'ı 3 farklı ieş,lde dökümana dahil edebiliriz.</p>
+    <!-- A. script -->
+    <script>
+        let x = 2 + 2;
+        document.write("<hr>");
+        document.write(x);
+    </script>
+    <!-- harici dosya ile dahil etme -->
+    <script src="kod.js"></script>
+    <hr>
+    <button onclick="alert ('BAŞIN GÖĞE ERDİ Mİ?')">BANA TIKLAMA</button>
+
+    <hr>
+    <button id="minnos" onmouseenter="document.getElementById('minnos').textContent = 'ŞAKA YAPTIM :)'">ÜZERİME GELMEYİN BURAYI TERK EDERİM!!</button>
+
+</body>
+</html>

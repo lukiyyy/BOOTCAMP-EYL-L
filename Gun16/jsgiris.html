@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>JavaStript Öğreniyorum</h1>
+
+    <p>
+        <!-- Buranın içini javascript 
+         ile değiştirebilir miyiz? -->
+    </p>
+
+    <script>
+        //dom ağacı document object model (dökümanın nesne modeli) 
+        //javasc//document nesnesi üzerinden mevcut sayfadaki dökümanın tüm elementlerine erişebiliriz(belirli yöntemlerle)
+        //sayfadaki ilk p elementinin eriş ve içindeki metni değiştir
+        // progrmalama:
+        // Komutların belli sırada belirli bir amaç içn çalıştırılması(algoritma ile)
+        //KOMUTLAR insan diline yakın bir dille 
+        let ilkParag = document.querySelector("p")
+
+        document.querySelector("p").textContent = "biz kimseyi yarı yolda bırakmadık onlar müsait bir yerde indiler... - bir kamyon arkası sözü";
+
+        ilkParag.style.color = "purple";
+
+        document.body.style.background = "linear-gradient(orange,white)";
+
+    </script>
+</body>
+
+</html>
