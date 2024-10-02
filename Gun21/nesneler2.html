@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesneler 2</title>
+</head>
+<body>
+    <script src="../ortak/yaz.js"></script>
+
+    <script>
+        //constructor fonksiyon ile nesne üretme
+
+        function araba(marka, yil, renk) {
+            this.marka = marka;
+            this.yil = yil;
+            this.renk = renk;
+
+            this.ozetle = function() {
+                return this.renk + " renkli " + this.yil + " model " + this.marka;
+            }
+
+            yaz("benim arabam var");
+        }
+
+        let a1 = new araba("Hyundai i20", 2020, "beyaz");
+        console.log(a1);
+        ciz(a1.ozetle());
+        
+
+
+        let a2 = new araba("BMWi7", 2024,"Siyah");
+        ciz(a2.ozetle());
+    </script>
+</body>
+</html>
