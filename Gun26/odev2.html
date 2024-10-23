@@ -2,3 +2,40 @@
 Bir kare yapın. Bu kareye tıklayınca sayfa üzerinde rastgele bir yere
 gitsin. (ipuçları: css'teki mutlak pozisyonlamadan yararlanılabilir.)
 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ödev 2</title>
+    <style>
+      #kare {
+        width: 200px;
+        height: 200px;
+        background: rebeccapurple;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kare"></div>
+
+    <script>
+      const square = document.getElementById("kare");
+      function moveSquare() {
+        const windowWidth = window.innerWidth - square.offsetWidth;
+        const windowHeight = window.innerHeight - square.offsetHeight;
+
+        const randomX = Math.floor(Math.random() * windowWidth);
+        const randomY = Math.floor(Math.random() * windowHeight);
+
+        square.style.left = `${randomX}px`;
+        square.style.top = `${randomY}px`;
+      }
+
+      square.addEventListener("click", moveSquare);
+    </script>
+  </body>
+</html>
