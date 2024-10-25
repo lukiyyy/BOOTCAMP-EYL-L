@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yapılacaklar Uygulaması</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/slate/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/yeti/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <h1 class="mt-4">Yapılacaklar</h1>
 
-      <form class="row mt-5 gy-2 gx-3 align-items-center">
+  <body>
+    <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 mx-auto">Yapılacaklar Listem</span>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form id="frmTask" class="row mt-5 gy-2 gx-3 align-items-center">
         <div class="col">
           <input
             type="text"
-            class="form-control"
+            class="form-control form-control-lg"
             id="task"
-            placeholder="Ne Yapacaksın"
+            placeholder="Ne yapacaksın?"
+            required
           />
         </div>
         <div class="col-auto">
-          <button type="submit" class="btn btn-primary">Ekle</button>
+          <button type="submit" class="btn btn-lg btn-primary">Ekle</button>
         </div>
       </form>
 
-      <div id="todos" class="mt-4 todos">
-        <div
-          class="row mb-3 border rounded py-3 px-1 mx-0 bg-primary border-secondary"
-        >
-          <div class="col-auto">
-            <input type="checkbox" />
-          </div>
-
-          <div class="col ps-0 d-flex align-items-center lead">
-            Projeyi Tamamla
-          </div>
-        </div>
-      </div>
+      <div id="todos" class="mt-4 todos"></div>
     </div>
+
+    <script src="site.js"></script>
   </body>
 </html>
